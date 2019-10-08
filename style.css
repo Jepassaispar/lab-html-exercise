@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header > div {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+
+/* FIRST BAR */
+
+header .blackHeart {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+#firstBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.1em;
+    padding: 0.1em;
+    font-weight: bold;
+    font-size: 1em;
+    height: 2em;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 0 0.5em;
+}
+
+@media only screen and (max-width : 826px){
+    #firstBar{
+        font-size: 0.8em;
+        padding: none;
+        margin: none;
+    }
+    .blackHeart {
+        width: 18px;
+        margin-right: none;
+    }
+}
+
+@media only screen and (max-width : 643px){
+    #firstBar{
+        font-size: 0.6em;
+        padding: none;
+        margin: none;
+    }
+    .blackHeart {
+        width: 15px;
+        margin-right: none;
+    }
+}
+
+
+/* SECOND BAR */
+
+.npmLogo{
+    width: 50px;
+    height: 15px;
+    margin: 0 1em 0 0.1em;
+}
+
+#secondBar{
+    display: flex;
+    align-items: center;
+    margin: none;
+    padding: 0.2em 1em;
+    font-size: 1em;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.magnifyingGlass{
+    height: 20px;
+    width: auto;
+    padding-left: 0.5em;
+}
+
+.wholeSearchBar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(232,217,217,.4);
+    height: auto;
+    box-shadow: 4px 4px 2px -2px gray;
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+
+.searchBar{
+    border: none;
+    background-color: rgba(232,217,217,.1);
+    width: 100%;
+    height: auto;
+    padding: 0.4em 0;
+}
+
+.searchButton{
+    border: solid 1px #fb3e44;
+    background-color: #fb3e44;
+    color: white;
+    font-size: 1em;
+    height: auto;
+    width: auto;
+    padding: 0.4em 1em;
+}
+
+.userRegistration{
+    display: flex;
+    padding-left: 1em;
+}
+
+.userRegistration a{
+    color: black;
+    text-decoration: none;
+}
+
+.join {
+    border: solid 1px lightgray;
+    border-bottom: solid 3px lightgray;
+    border-right: solid 3px lightgray;
+}
+
+.join, .logIn {
+    width: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width : 643px){
+    #secondBar{
+        font-size: 0.7em;
+        padding: none;
+        margin: none;
+    }
+    .npmLogo {
+        width: 50px;
+        margin-right: none;
+    }
+    .searchButton{
+        height: 2.5em;
+        padding: 0 0.7em;
+    }
+}
+
+/* SECTION 1 */
+
+#section1 {
+    background-color: rgba(232,217,217,.3);
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    font-size: 5em;
+    font-weight: 700;
+    justify-content: center;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 30%;
+}
+
+.section2Buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.seePlans {
+    background-color: #fb3e44;
+    color: white;
+    font-weight: bold;
+    margin: 2em 0.5em;
+    padding: 0.5em 3em;
+    box-shadow: 8px 8px 2px 1px rgba(251, 59, 73, .2);
+}
+
+.joinForFree {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin: 2em 0.5em;
+    padding: 0.5em 3em;
+}
+
+/* SECTION 2 */
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.triangleHexagon {
+    padding: 3em 40%;
+    height: auto;
+    width: 20%;
+}
+
+#section2 h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    border: transparent 1px rgba(255, 204, 53, .4);
+    background-color: rgba(255, 204, 53, .4);
+    padding: 0.1em 2% 0.1em 5%;
+    margin: 1em 10% 1em 10%;
+    transform: skew(9deg, 0deg);
+    font-style: italic;
+}
+
+#section2 p {
+    justify-content: center;
+    margin: 1em 20%;
+}
+
+/* SECTION 3 */
+
+.org{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin: 4%;
+}
+
+.org > div {
+    width: auto;
+    margin: 0 3%;
+}
+
+.orgLogos {
+    height: 30px;
+}
+
+h3 {
+    color: #ED1C24;
+}
+
+.org h3 {
+    padding-bottom: 0.5em;
+}
+
+.org p {
+    padding: 0.5em 0;
+}
+
+.createOrg {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    color: white;
+    border: solid 1px black;
+    background-color: black;
+    box-shadow: 8px 8px 0 rgba(128, 83, 35, .2);
+    margin: 0 35% 5em 35%;
+    padding: .5em 0;
+}
+
+@media only screen and (max-width : 826px){
+    .org{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .zeroConfig  {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .teamManag {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .familiarFeat {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .npmAudit {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .org > div {
+        width: auto;
+        margin: 0 5%;
+    }
+
+    .createOrg {
+        font-size: 1em;
+        margin: 0 30% 5em 30%;
+    }
+}
+
+.signature {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.signature .blackHeart {
+    width: 20px;
+}
